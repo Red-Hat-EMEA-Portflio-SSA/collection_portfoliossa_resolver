@@ -1,0 +1,5 @@
+# Statically created via Ansible deployment
+{% if search_domain is defined and search_domain|length %}search {{ search_domain }}
+{% endif %}
+{% for nameserver in nameservers %}nameserver {{ nameserver }}
+{% endfor %}

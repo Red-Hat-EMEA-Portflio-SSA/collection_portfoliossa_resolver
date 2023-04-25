@@ -1,0 +1,5 @@
+---
+# defaults file for resolvconf
+
+search_domain: "{{ resolvconf_search_domain }} | default (omit)"
+nameservers: "{{ resolvconf_nameservers }}"
